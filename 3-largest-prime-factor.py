@@ -39,8 +39,6 @@ def get_prime_factors(n):
   factors = []
   n_decomposed = n
 
-  i = 1
-
   while n_decomposed and n_decomposed > 0:
     # Start discovering the prime factors by decomposing "n"
 
