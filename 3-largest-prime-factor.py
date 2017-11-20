@@ -20,7 +20,7 @@ def is_prime_number(n):
 def get_next_prime_number(n):
   # Returns the first prime number that comes after "n"
 
-  if (is_prime_number(n) is not True):
+  if is_prime_number(n) is not True:
     raise Exception('Can only get next prime number if prime number is given. %s is not a prime number' % n)
 
   i = n + 1
@@ -33,7 +33,7 @@ def get_next_prime_number(n):
 def get_prime_factors(n):
   # Returns the list factors that consist of prime numbers only
 
-  if (is_prime_number(n)):
+  if is_prime_number(n):
     raise Exception('Cannot get prime factors for prime number: %s' % n)
 
   factors = []
