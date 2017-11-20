@@ -21,7 +21,7 @@ def get_next_prime_number(n):
   # Returns the first prime number that comes after "n"
 
   if (is_prime_number(n) is not True):
-    raise Exception('Can only get next prime number if prime number is given. %s is not a prime number' % (n))
+    raise Exception('Can only get next prime number if prime number is given. %s is not a prime number' % n)
 
   i = n + 1
   while i:
@@ -34,17 +34,15 @@ def get_prime_factors(n):
   # Returns the list factors that consist of prime numbers only
 
   if (is_prime_number(n)):
-    raise Exception('Cannot get prime factors for prime number: %s' % (n))
+    raise Exception('Cannot get prime factors for prime number: %s' % n)
 
   factors = []
   n_decomposed = n
 
   i = 1
 
-  while n_decomposed and n_decomposed > 0 and i < 10:
+  while n_decomposed and n_decomposed > 0:
     # Start discovering the prime factors by decomposing "n"
-
-    i += 1
 
     square_root = math.sqrt(n_decomposed)
     prime_number = 2
