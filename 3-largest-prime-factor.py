@@ -56,7 +56,7 @@ def get_prime_factors(n):
         factors.append(prime_number)
         n_decomposed = int(n_decomposed / prime_number)
 
-        if (is_prime_number(devision)):
+        if is_prime_number(devision):
           # Devision is prime number, which indicates all factors have been found
 
           factors.append(n_decomposed)
